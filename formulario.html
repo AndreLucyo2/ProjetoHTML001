@@ -8,11 +8,14 @@
 
 <body>
 
+    <h1>Estudo de componentes de formularios</h1>
+    <hr>
+
     <!--
         form
         input
     -->
-
+    <h4>Login</h4>
     <form action="processa_login.php">
         Usuario: <br>
         <input type="text" name="user">
@@ -22,9 +25,51 @@
         <input type="password" name="pass">
         <br>
         <br>
-        <input type="submit" value="Login"> 
+        <input type="submit" value="Login">
+    </form>
+    <br>
+
+    <h4>Cadastro</h4>
+    <form action="processa_login.php">
+
+        <!--Label-->
+        <label for="user">Usuario</label>
+        <!--TextBox campo de texto-->
+        <input type="text" name="user">
+
+        <br>
+        <br>
+        <!-- Radio Button-->
+        <label for="">Sexo</label> <br>
+        <input type="radio" name="sexo" value="M"> Masculino <br>
+        <input type="radio" name="sexo" value="F"> Femino
+        <br>
+        <br>
+        <!-- checkbox -->
+        <label for=""><b>Interesses:</b></label> <br>
+        <input type="checkbox" name="Interesses" value="1"> Computação <br>
+        <input type="checkbox" name="Interesses" value="1"> Musia <br>
+        <input type="checkbox" name="Interesses" value="1"> Radio <br>
+        <input type="checkbox" name="Interesses" value="1"> Artes
+        <br>
+        <br>
+        <label for="">Estados</label>
+        <br>
+        <select name="estados">
+            <option value="PR">Parana</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Observações</label><br>
+        <textarea name="obs" rows="10" cols="20"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="cadastre-se">
 
     </form>
+
 
 </body>
 
