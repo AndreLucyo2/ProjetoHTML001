@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contato</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    
+    <!-- Código CSS -->
+    <style>
+        .alinhadoEsquerda {text-align:left;}
+        .alinhadoCentro {text-align:center;}
+        .alinhadoDireita {text-align:right;}
+        
+        .textoRealce-E {color:#2C55FF;}
+        .textoRealce-C {color:green;}
+        .textoRealce-D {color:red;}
+        
+        td {padding: 8px; border: 1px solid #E4E4E4;}
+        </style>
+        
+        <!-- Código da Tabela -->
+        <table cellspacing="6">        
+            <tr>
+                <td class="alinhadoDireita">
+                    <span class="textoRealce-D">Alinhado à direita</span>
+                    @Html.Label("Cep: ")
+                </td>            
+                <td class="alinhadoEsquerda">
+                    <span class="textoRealce-E">Alinhado à esquerda</span>
+                    @Html.Label("Endereco: ")
+                    
+                </td>
+                <td class="alinhadoCentro">
+                    <span class="textoRealce-C">Alinhado ao centro</span>
+                    @Html.Label("Número: ")
+                </td>
+            </tr>
+        </table>
+
+</body>
